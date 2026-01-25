@@ -5,16 +5,16 @@ import { Link } from "react-router-dom";
 function Header() {
   const { isDark, toggleTheme } = useTheme();
   return (
-    <nav className="flex flex-wrap items-center justify-between mx-auto p-4 dark:text-white bg-white border-gray-200 dark:bg-gray-900">
+    <nav className="flex flex-wrap items-center justify-between mx-auto p-4 bg-violet  dark:text-white border-gray-200 dark:bg-gray-900">
       <Link to="/" className="flex item-center space-x-3 rtl:space-x-reverse">
-        <img src={henry} alt="henry icon" className="w-16 h-16 rounded-full" />
+        
       </Link>
       <div className="block">
         <ul className="flex items-center space-x-1 ">
           <li>
             <a
               href="#about"
-              className="rounded-md hover:bg-gray-700 px-3 py-2 text-base"
+              className="rounded-md hover:bg-slate-50 dark:hover:bg-gray-700 px-3 py-2 text-base"
             >
               About
             </a>
@@ -22,7 +22,7 @@ function Header() {
           <li>
             <a
               href="#work"
-              className="rounded-md hover:bg-gray-700 px-3 py-2 text-base"
+              className="rounded-md hover:bg-slate-50 dark:hover:bg-gray-700 px-3 py-2 text-base"
             >
               Work
             </a>

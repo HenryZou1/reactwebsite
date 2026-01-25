@@ -1,7 +1,8 @@
 import Header from "../component/header.jsx";
 import myAv from "../image/myAvatar.png";
 import { useEffect, useState } from "react";
-
+import Certifications from "../component/certifications.js";
+import Projects from "../component/projects.js";
 function Intro() {
   const icons = {
     linkedin: [
@@ -30,7 +31,7 @@ function Intro() {
 
         <br />
         <h2 className="text-5xl font-semibold text-gray-700 dark:text-cyan-400 leading-relaxed">
-          Software Developer
+          Software Engineer
         </h2>
 
         <br />
@@ -183,22 +184,22 @@ const WorkExperience = () => {
           key={work.id}
           data-animate="work"
           data-id={work.id}
-          className={` max-w-6xl  mx-auto backdrop-blur-sm bg-slate-800/40 border border-slate-600/20 rounded-lg h-96 transform transition-all duration-700 ${visibleItems.has(work.id) ? "translate-x-0 opacity-100" : index % 2 === 0 ? "-translate-x-32 opacity-0" : "translate-x-32 opacity-0"}`}
+          className={` max-w-6xl  mx-auto backdrop-blur-sm bg-white dark:bg-slate-800/40 border border-slate-200 dark:border-slate-600/20 rounded-lg h-96 transform transition-all duration-700 ${visibleItems.has(work.id) ? "translate-x-0 opacity-100" : index % 2 === 0 ? "-translate-x-32 opacity-0" : "translate-x-32 opacity-0"}`}
           style={{
             boxShadow:
               "6px 6px 12px rgba(0, 0, 0, 0.5), -6px -6px 12px rgba(100, 116, 139, 0.1)",
             borderRadius: "12px",
           }}
         >
-          <div className="justify-center h-full flex flex-col bg-slate-900/80 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-slate-700 hover:border-slate-600 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10">
+          <div className="justify-center h-full flex flex-col bg-white  dark:bg-slate-900/80 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-slate-300 dark:border-slate-700 hover:border-slate-600 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10">
             <div className="flex flex-col md:flex-row md:items-center justify-between mb-4 ">
-              <h3 className="text-xl md:text-2xl font-bold text-white mb-1">
+              <h3 className="text-xl md:text-2xl font-bold dark:text-white mb-1">
                 {work.title}
               </h3>
-              <p className="text-sm md:text-base text-gray-300">
+              <p className="text-sm md:text-base dark:text-gray-300">
                 {work.company}
               </p>
-              <p className="text-slate-400 font-medium mt-2 md:mt-0">
+              <p className="dark:text-slate-400 font-medium mt-2 md:mt-0">
                 {work.period}
               </p>
             </div>
@@ -206,13 +207,13 @@ const WorkExperience = () => {
               {work.skills.map((skill, skillIndex) => (
                 <span
                   key={skillIndex}
-                  className="px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm border border-blue-600/30"
+                  className="px-3 py-1 dark:bg-blue-600/20 dark:text-blue-300 rounded-full text-sm border border-blue-600/30"
                 >
                   {skill}
                 </span>
               ))}
             </div>
-            <div className="text-slate-400 font-medium mt-2 md:mt-0 flex-1 ">
+            <div className="dark:text-slate-400 font-medium mt-2 md:mt-0 flex-1 ">
               {work.description}
             </div>
           </div>
@@ -226,7 +227,7 @@ const Index = () => {
   return (
     <div
       className={
-        "w-full min-h-screen dark:bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 "
+        "w-full min-h-screen bg-gradient-to-br from-slate-300 via-violet-200 to-slate-200 dark:from-slate-900 dark:via-purple-900 dark:to-slate-900"
       }
     >
       <Header />
@@ -236,6 +237,8 @@ const Index = () => {
       <div className="space-y-8  ">
         <WorkExperience></WorkExperience>
       </div>
+      <Certifications></Certifications>
+      <Projects></Projects>
     </div>
   );
 };
