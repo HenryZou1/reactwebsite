@@ -127,18 +127,17 @@ const Projects: React.FC = () => {
     {
       id: "3",
       title: "Mentions Crawler",
-      description:
-        "Fullstack application with React, Material UI, Express",
+      description: "Fullstack application with React, Material UI, Express",
       thumbnailUrl: "https://img.youtube.com/vi/eoHvDXE8yk4/maxresdefault.jpg",
       videoId: "eoHvDXE8yk4",
     },
     {
       id: "4",
-      title: "Image Compression",
+      title: "Job Application Tracker",
       description:
-        "MATLAB program demonstrating JPEG compression using discrete cosine transformation",
-      thumbnailUrl: "https://img.youtube.com/vi/0tReKY53FXc/maxresdefault.jpg",
-      videoId: "0tReKY53FXc",
+        "Simple Job Application Tracker to track completed job applications",
+      thumbnailUrl: "https://img.youtube.com/vi/RGC41doAJcs/maxresdefault.jpg",
+      videoId: "RGC41doAJcs",
     },
     {
       id: "5",
@@ -159,25 +158,24 @@ const Projects: React.FC = () => {
     {
       id: "7",
       title: "Jarknoid",
-      description:
-        "Brick breaker game built with Java Swing ",
+      description: "Brick breaker game built with Java Swing ",
       thumbnailUrl: "images/project7.webp",
       videoId: "1_43MkpMEbk",
     },
     {
       id: "8",
       title: "Ping Pong Ball Detection",
-      description:
-        "Computer vision system using Raspberry Pi 4 ",
+      description: "Computer vision system using Raspberry Pi 4 ",
       thumbnailUrl: "https://img.youtube.com/vi/eCVxcNpz7TI/maxresdefault.jpg",
       videoId: "eCVxcNpz7TI",
     },
     {
       id: "9",
-      title: "Python Application",
-      description: "Python server to download files.",
-      thumbnailUrl: "https://i.ytimg.com/vi/1_43MkpMEbk/maxresdefault.jpg",
-      videoId: "5zl6P-1v1X4",
+      title: "Image Compression",
+      description:
+        "MATLAB program demonstrating JPEG compression using discrete cosine transformation",
+      thumbnailUrl: "https://img.youtube.com/vi/0tReKY53FXc/maxresdefault.jpg",
+      videoId: "0tReKY53FXc",
     },
   ];
 
