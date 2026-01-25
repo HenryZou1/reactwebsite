@@ -32,38 +32,40 @@ const CertificationCard: React.FC<CertificationCardProps> = ({
   onClick,
 }) => {
   return (
-    <div
-      onClick={onClick}
-      className="group bg-white dark:bg-slate-800 rounded-lg p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-200 dark:border-slate-700 cursor-pointer hover:scale-[1.02]"
-    >
-      <div className="flex items-start gap-4">
-        <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-violet-500 to-purple-600 rounded-lg flex items-center justify-center">
-          <Award className="w-6 h-6 text-white" />
-        </div>
+    <section id="Certifications">
+      <div
+        onClick={onClick}
+        className="group bg-white dark:bg-slate-800 rounded-lg p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-200 dark:border-slate-700 cursor-pointer hover:scale-[1.02]"
+      >
+        <div className="flex items-start gap-4">
+          <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-violet-500 to-purple-600 rounded-lg flex items-center justify-center">
+            <Award className="w-6 h-6 text-white" />
+          </div>
 
-        <div className="flex-1">
-          <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-1 group-hover:text-violet-600 dark:group-hover:text-violet-400 transition-colors">
-            {title}
-          </h3>
-          <p className="text-sm text-slate-600 dark:text-slate-300 mb-2">
-            {issuer}
-          </p>
-          <div className="flex flex-wrap items-center gap-3 text-sm text-slate-500 dark:text-slate-400">
-            <span>{date}</span>
-            {credentialId && (
-              <>
-                <span>•</span>
-                <span className="font-mono text-xs">{credentialId}</span>
-              </>
-            )}
+          <div className="flex-1">
+            <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-1 group-hover:text-violet-600 dark:group-hover:text-violet-400 transition-colors">
+              {title}
+            </h3>
+            <p className="text-sm text-slate-600 dark:text-slate-300 mb-2">
+              {issuer}
+            </p>
+            <div className="flex flex-wrap items-center gap-3 text-sm text-slate-500 dark:text-slate-400">
+              <span>{date}</span>
+              {credentialId && (
+                <>
+                  <span>•</span>
+                  <span className="font-mono text-xs">{credentialId}</span>
+                </>
+              )}
+            </div>
+          </div>
+
+          <div className="flex-shrink-0 text-slate-400 dark:text-slate-500 group-hover:text-violet-600 dark:group-hover:text-violet-400 transition-colors">
+            <span className="text-sm">View Certificate</span>
           </div>
         </div>
-
-        <div className="flex-shrink-0 text-slate-400 dark:text-slate-500 group-hover:text-violet-600 dark:group-hover:text-violet-400 transition-colors">
-          <span className="text-sm">View Certificate</span>
-        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
@@ -118,28 +120,28 @@ const Certifications: React.FC = () => {
       issuer: "Toronto Metropolitan University (Formerly Ryerson University)",
       date: "October 2020",
       credentialId: "",
-      imageUrl: "src/image/bachelor.png",
+      imageUrl: "images/bachelor.png",
     },
     {
       title: "Microsoft Certified: Azure Administrator Associate",
       issuer: "Microsoft",
       date: "October 18, 2025",
       credentialId: "58E1BCDE9AF80D95",
-      imageUrl: "src/image/az104.png",
+      imageUrl: "images/az104.png",
     },
     {
       title: "Microsoft Certified: Azure Fundamentals",
       issuer: "Microsoft",
       date: " July 3, 2024",
       credentialId: "A5046CCCEB198414",
-      imageUrl: "src/image/AZ-900.png",
+      imageUrl: "images/AZ-900.png",
     },
     {
       title: "IBM Z Xplore - All Star",
       issuer: "IBM",
       date: "October 13, 2024",
       credentialId: "",
-      imageUrl: "src/image/xplore.png",
+      imageUrl: "images/xplore.png",
     },
   ];
 

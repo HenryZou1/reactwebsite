@@ -1,5 +1,5 @@
 import Header from "../component/header.jsx";
-import myAv from "../image/myAvatar.png";
+
 import { useEffect, useState } from "react";
 import Certifications from "../component/certifications.js";
 import Projects from "../component/projects.js";
@@ -21,7 +21,7 @@ function Intro() {
   return (
     <section className="flex items-center h-full p-4">
       <div className="w-2/3 flex justify-center">
-        <img src={myAv} className="w-150 h-150"></img>
+        <img src={"/images/myAvatar.png"} className="w-150 h-150"></img>
       </div>
       <div className="w-1/2 flex flex-col justify-center items-start p-8 space-y-2 ">
         <h1 className="text-7xl font-extrabold text-gray-800 dark:text-cyan-400 leading-tight">
