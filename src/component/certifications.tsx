@@ -130,11 +130,18 @@ const Certifications: React.FC = () => {
       imageUrl: "images/az104.png",
     },
     {
+      title: "HashiCorp Certified: Terraform Associate (004)",
+      issuer: "HashiCorp",
+      date: "February 17, 2025",
+      credentialId: "CV26Z10836",
+      imageUrl: "images/TerraformAssociate004.jpg",
+    },
+    {
       title: "Microsoft Certified: Azure Fundamentals",
       issuer: "Microsoft",
       date: " July 3, 2024",
-      credentialId: "A5046CCCEB198414",
-      imageUrl: "images/AZ-900.png",
+      credentialId: "3ba39cc5-a2ee-4109-b287-9b9e8033708e",
+      imageUrl: "images/az104.png",
     },
     {
       title: "IBM Z Xplore - All Star",
